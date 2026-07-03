@@ -1,0 +1,77 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can this be reproduced?
+      placeholder: |
+        1. Open a note
+        2. Run "Empty Tab: Empty current tab"
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Empty Tab version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: obsidian-version
+    attributes:
+      label: Obsidian version
+      description: Settings → About → Current version
+      placeholder: "1.12.7"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: conflict-check
+    attributes:
+      label: Conflict check
+      options:
+        - label: I disabled all other community plugins and the issue still happens
+          required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, console errors (Ctrl/Cmd+Shift+I), anything else useful.
+    validations:
+      required: false
