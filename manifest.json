@@ -1,0 +1,10 @@
+{
+	"id": "empty-tab",
+	"name": "Empty Tab",
+	"version": "1.0.0",
+	"minAppVersion": "1.12.7",
+	"description": "Adds a command to replace the current tab with an empty page, the same screen shown when opening a new tab.",
+	"author": "waldemar-one",
+	"authorUrl": "https://github.com/waldemar-one",
+	"isDesktopOnly": false
+}
